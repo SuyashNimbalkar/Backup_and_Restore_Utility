@@ -1,6 +1,5 @@
-# dbbackup/factory.py
-from .dbproviders.postgres import PostgresBackup
-from .dbproviders.mysql import MySQLBackup
+from dbproviders.postgres import PostgresBackup
+from dbproviders.mysql import MySQLBackup
 
 def get_backup_tool(db_type, **kwargs):
     db_type = db_type.lower()
