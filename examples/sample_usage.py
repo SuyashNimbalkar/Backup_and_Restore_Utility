@@ -7,7 +7,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 
-from core import get_backup_tool
+from backup_restore import get_backup_tool
 
 tool = get_backup_tool(
     db_type="postgres",
